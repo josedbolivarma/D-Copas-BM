@@ -1,0 +1,481 @@
+*{margin:0; padding:0; box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+
+
+.banner{
+    position:relative;
+    width:100%;
+    height:100vh;
+    background-image:url(../img/background1.jpg);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-size:cover;
+}
+.banner .content{
+    max-width:980px;
+    text-align:center;
+}
+
+.banner .content h2{
+    font-size:5em;
+    color:#fff;
+}
+
+.btn{
+    font-size:1em;
+    color:#fff;
+    background:#ff0157;
+    display:inline-block;
+    padding:10px 30px;
+    margin-top:20px;
+    text-transform:uppercase;
+    text-decoration:none;
+    letter-spacing:2px;
+    transition:all 300ms;
+}
+.btn:hover{
+    letter-spacing:5px;
+}
+
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding:40px 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:10000;
+    transition:0.5s;
+}
+
+header.sticky{
+    background:#fff;
+    padding:10px 100px;
+    box-shadow:0px 5px 20px rgba(0,0,0,0.05);
+}
+header.sticky .logo{
+    color:#111;
+}
+
+
+
+header .logo{
+    font-size:2.5em;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700px;
+}
+
+header .logo span{
+    color:#ff0157;
+}
+
+header .navigation{
+    position:relative;
+    display:flex;
+}
+
+header .navigation li{
+    margin-left:30px;
+    list-style:none;
+}
+header .navigation li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:300px;
+}
+
+header.sticky .navigation li a{
+    color:#111;
+}
+
+header .navigation li a:hover{
+    cursor:pointer;
+    color:#ff0157;
+}
+
+
+
+section{
+    padding:100px;
+}
+
+.row{
+    position:relative;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+}
+
+.row .col50{
+    position:relative;
+    width:48%;
+}
+
+.titleText{
+    font-size:2em;
+    color:#111;
+    font-weight:300;
+}
+
+.tittleText span{
+    color:#ff0157;
+    font-weight:700;
+    font-size:1.5em;
+}
+
+.row .col50 .imgBx{
+    position:relative;
+    width:100%;
+    /*min-height:300px;*/
+    height:100%;
+}
+
+.row .col50 .imgBx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Parte 4 */
+
+.title{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+.menu .content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row-reverse;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.menu .content .box{
+    width:340px;
+    margin:20px;
+    box-shadow:0px 5px 35px rgba(0,0,0,0.08);
+
+}
+
+.menu .content .box .imgBx{
+    position:relative;
+    width:100%;
+    height:300px;
+
+}
+.menu .content .box .imgBx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.menu .content .box .text{
+    padding:10px 0px 5px 10px;
+}
+.menu .content .box .text h3{
+    font-weight:400;
+    color:#111;
+}
+
+/*   Parte 5   */
+.expert .content{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    flex-direction:row;
+    margin-top:40px;    
+}
+
+.expert .content .box{
+    width:250px;
+    margin:15px;
+}
+.expert .content .box .imgBx{
+    position:relative;
+    width:100%;
+    height:300px;
+}
+.expert .content .box .imgBx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.expert .content .box .text{
+    padding:10px 0px 5px 10px;
+}
+.expert .content .box .text h3{
+    font-weight:400;
+    color:#111;
+}
+
+/*  Parte 6*/
+.testimonials{
+background:url(../img/pexels-chris-f-1283219.jpg);
+background-size:cover;
+}
+
+.white .tittleText,
+.white p{
+    color:#fff;
+}
+
+.testimonials .content{
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.testimonials .content .box{
+    width:340px;
+    margin:20px;
+    padding:40px;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+
+
+.testimonials .content .box .imgBx{
+    position:relative;
+    width:80px;
+    height:80px;
+    margin-bottom:20px;
+    border-radius:50%;
+    overflow:hidden;
+}
+.testimonials .content .box .imgBx img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.testimonials .content .box .text{
+    text-align:center;
+}
+.testimonials .content .box .text p{
+    color:#666;
+    font-style:italic;
+}
+.testimonials .content .box .text h3{
+    font-size:1em;
+    margin-top:20px;
+    color:#ff0157;
+    font-weight:600;
+}
+
+
+/*  Parte 6 */
+.contact{
+    background-image:url(../img/background2.jpg);
+    background-size:cover;    
+}
+
+.contactForm{
+    padding:50px 75px;
+    background:#fff;
+    max-width:500px;
+    box-shadow:0px 15px 50px rgba(0,0,0,0.01);
+    margin-top:50px;    
+}
+
+.contactForm h3{
+    color:#111;
+    font-size:1.2em;
+    margin-bottom:20px;
+    font-weight:500;
+}
+
+.contactForm .inputBox{
+    position:relative;
+    width:100%;
+    margin-bottom:25px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width:100%;
+    padding:10px;
+    border:1px solid #555;
+    color:#111;
+    font-size:16px;
+    font-weight:300;
+    outline:none;
+    resize:none;
+}
+                  
+.contactForm .inputBox input[type="submit"]{
+    font-size:1em;
+    color:#fff;
+    background:#ff0157;
+    text-decoration:none;
+    max-width:100px;
+    border:none;
+    letter-spacing:2px;
+    cursor:pointer;
+    display:inline-block;
+    text-transform:uppercase;
+    font-weight:500;
+    transition: 0.5s;
+}
+
+.contactForm .inputBox input[type="submit"]:hover{
+    letter-spacing:5px;
+}
+
+
+.copyrightText{
+    padding:8px 40px;
+    border-top:1px solid rgba(0,0,0,0.01);
+    text-align:center;
+}
+
+.copyrightText p{
+    color:#333;
+}
+.copyrightText a{
+    color:#ff0157;
+    font-weight:500;
+    text-decoration:none;
+}
+
+@media (max-width:991px){
+    header,
+    header.sticky{
+        padding:10px;
+    }
+    header .navigation{
+        display:none;
+    }
+    header .menuToggle{
+        position:relative;
+        width:40px;
+        height:40px;
+        background-image:url(../img/menu.jpg);
+        background-size:cover;
+        background-repeat:no-repeat;
+        background-position:center;
+        border-radius:50%;
+        cursor:pointer;   
+    }
+
+    header .menuToggle.active{
+        background-image:url(../img/close.png);
+        background-size:25px;
+    }
+    header.sticky .menuToggle{
+        filter:invert(1);
+    }
+
+    header .navigation.active{
+        width:100%;
+        height: calc(100% - 65px);
+        position:fixed;
+        top:65px;
+        left:0;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+        background:#fff;
+        color:#111;
+    }
+    header .navigation li{
+        margin-left:0;
+    }
+    header .navigation li a{
+        color:#111;
+        font-size:1.6em;
+        }
+    header .navigation li a:hover{
+        color:#ff0157;
+    }
+
+    .banner .content h3{
+        font-size:3em;
+        color:#fff;
+    }
+
+    section{
+        padding:20px;
+    }
+
+    .row{
+        flex-direction:column;
+    }
+
+    .row .col50{
+        position:relative;
+        width:100%;
+    }
+    .row .col50 .imgBx{
+        height:300px;
+        margin-top:20px;
+    }
+
+
+    .menu .content{
+        margin-top:20px;
+    }
+    .menu .content .box{
+        margin:10px;
+    }
+    .menu .content .box .imgBx{
+        height:260px;
+    }
+
+    .tittleText{
+        text-align:center;
+    }
+    .tittleText{
+        font-size:1.8em;
+        margin-bottom:15px;
+        font-weight:300;
+        line-height:1.5em;
+    }
+
+    .testimonials .content .box{
+        margin:10px;
+        padding:20px;
+    }
+
+    .contactForm{
+        padding:35px 40px;
+        margin-top:20px;
+        margin-bottom:30px;
+    }
+
+}
+@media (max-width:480px){
+    .banner .content h2{
+        font-size:2.2em;
+        color:#111;
+    }
+}
